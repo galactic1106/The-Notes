@@ -1,0 +1,1 @@
+Stanza teams accetta tutte le richieste per entrare
