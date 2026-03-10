@@ -2,5 +2,8 @@
   "obsidian-excalidraw-plugin",
   "obsidian-git",
   "vim-toggle",
-  "obsidian-latex-suite"
+  "obsidian-latex-suite",
+  "obsidian-completr",
+  "obsidian-relative-line-numbers",
+  "table-extended"
 ]

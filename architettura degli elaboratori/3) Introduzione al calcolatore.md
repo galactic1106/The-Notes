@@ -8,7 +8,7 @@ un calcolatore è una macchina in grado di eseguire calcoli in modo automatico:
 L'architettura di un elaboratore, è in più generale un sistema di elaborazione, è costituita da due componenti fondamentali:
 - Hardware (insieme delle componenti fisiche ed elettroniche)
 - Software (insieme dei programmi)
-- Firmware
+- Firmware (componenti hardware pre-programmati atti a realizzare specifiche funzionalità)
 
 descrive le caratteristiche visibili all' utente, cioè quello che influenza direttamente la scrittura dei programmi, è quindi noto al programmatore:
 - set di istruzioni (ISA) 
