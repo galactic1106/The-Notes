@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architettura reti ed internet/test/02c_Teoria_Informazione_Misura_e_Protocolli.md",
+                "file": "architettura reti ed internet/Elementi Infrastruttura Internet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02c_Teoria_Informazione_Misura_e_Protocolli"
+              "title": "Elementi Infrastruttura Internet"
             }
           }
         ]
@@ -198,18 +198,25 @@
   },
   "active": "91ba1c46a14f952e",
   "lastOpenFiles": [
+    "architettura reti ed internet/Elementi infrastruttura Internet.md",
+    "architettura reti ed internet/test/01a_Storia_di_Internet_1961_1988.md",
+    "architettura reti ed internet/ARP e RARP.md",
+    "architettura reti ed internet/test/03a_Livello_Fisico_e_Mezzi_Trasmissivi.md",
+    "architettura reti ed internet/test/04c_Accesso_Multiplo_Protocolli_DL.md",
+    "architettura reti ed internet/test/04b_Controllo_Flusso_ARQ.md",
+    "architettura reti ed internet/test/04a_DataLink_Framing_Errori.md",
+    "architettura reti ed internet/test/03c_Teoremi_di_Nyquist_e_Shannon.md",
+    "architettura reti ed internet/test/02c_Teoria_Informazione_Misura_e_Protocolli.md",
+    "architettura reti ed internet/test/03b_Connessioni_Wireless_e_Reti_Mobili.md",
     "architettura reti ed internet/test/02b_Modello_ISO_OSI_e_Standardizzazione.md",
     "architettura reti ed internet/test/02a_Storia_di_Internet_1989_Oggi.md",
     "architettura reti ed internet/test/01c_Elementi_Infrastruttura_e_Reti_Aziendali.md",
     "architettura reti ed internet/test/01b_Mezzi_Trasmissivi_Topologie_Accesso.md",
-    "architettura reti ed internet/test/01a_Storia_di_Internet_1961_1988.md",
-    "architettura reti ed internet/test/02c_Teoria_Informazione_Misura_e_Protocolli.md",
     "architettura reti ed internet/test/Untitled.md",
     "architettura reti ed internet/test",
     "architettura reti ed internet/Intranet Extranet DMZ.md",
     "architettura reti ed internet/Modello ISO OSI.md",
     "architettura reti ed internet/Protocollo IP e Datagram.md",
-    "architettura reti ed internet/ARP e RARP.md",
     "architettura reti ed internet/Livello Rete e Famiglia TCP IP.md",
     "architettura reti ed internet/Topologie Connessioni e Reti Wireless.md",
     "architettura reti ed internet/Storia di Internet.md",
@@ -219,14 +226,7 @@
     "architettura reti ed internet/Informazione e Misura.md",
     "architettura reti ed internet/Elementi Infrastruttura Internet.md",
     "Untitled.canvas",
-    "RARP.md",
-    "Untitled.md",
-    "Cloud Computing.md",
-    "Storia_di_Internet.md",
-    "NAP.md",
-    "architettura degli elaboratori/6) Memorie.md",
     "architettura reti ed internet",
-    "Shif.md",
     "Excalidraw/Untitled.canvas",
     "Excalidraw",
     "architettura degli elaboratori/Tutorati/2",
