@@ -44,10 +44,10 @@ Prima di trasmettere, la stazione rileva se il canale è libero o occupato:
 
 ## 4. Protocolli Data Link Classici e Punto-Punto
 
-### BSC (Binary Synchronous Communications)[cite: 4]
+### BSC (Binary Synchronous Communications)
 * Protocollo orientato ai **caratteri** (sviluppato da IBM), half-duplex, basato su codici ASCII/EBCDIC e caratteri di controllo (`SYN` per sincronizzazione, `SOH`, `STX`, `ETX`, `ACK0/ACK1`, `NAK`)[cite: 4]. Usa **byte stuffing** (`DLE`) per la trasparenza dei dati e controllo di flusso Stop-and-Wait.
 
-### HDLC (High-Level Data Link Control)[cite: 4]
+### HDLC (High-Level Data Link Control)
 * Protocollo standard ISO orientato ai **bit**, full-duplex, con **bit stuffing** e finestra scorrevole (Go-Back-N / Selective Repeat)[cite: 4].
 * **Struttura del frame HDLC:**
   `| Flag (8 bit: 01111110) | Address (8 bit) | Control (8/16 bit) | Information (variabile) | FCS/CRC (16/32 bit) | Flag (8 bit) |`
