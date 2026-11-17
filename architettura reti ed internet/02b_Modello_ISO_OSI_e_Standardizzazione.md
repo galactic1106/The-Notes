@@ -49,6 +49,16 @@ Il modello **TCP/IP** (nato prima del modello OSI dalla pratica operativa di ARP
 3. **Internet:** corrisponde al livello 3 OSI (IP).
 4. **Network Access / Host-to-Network:** accorpa i livelli 1 e 2 OSI (Fisico e Data Link).
 
+| Livello | Modello ISO/OSI (7 livelli) | Stack TCP/IP (4 livelli) | Modello Ibrido (5 livelli) | Protocolli / Concetti chiave |
+| :---: | :--- | :--- | :--- | :--- |
+| **7** | **Application** (Applicazione) | **Application** (Applicazione) | **Application** | HTTP, DNS, SMTP, FTP, SSH |
+| **6** | **Presentation** (Presentazione) | *(accorpato in Application)* | *(accorpato in Application)* | Codifica, cifratura, compressione |
+| **5** | **Session** (Sessione) | *(accorpato in Application)* | *(accorpato in Application)* | Gestione dialogo e sincronizzazione |
+| **4** | **Transport** (Trasporto) | **Transport** (Trasporto) | **Transport** | TCP, UDP |
+| **3** | **Network** (Rete) | **Internet** | **Network / Internet** | IP, ICMP, ARP, routing |
+| **2** | **Data Link** (Collegamento) | **Network Access** *(Host-to-Network)* | **Data Link** | Ethernet (802.3), Wi-Fi (802.11), MAC, Switch |
+| **1** | **Physical** (Fisico) | *(accorpato in Network Access)* | **Physical** | Cavi, fibra ottica, segnali radio, bit |
+
 ---
 
 ## 4. Standardizzazione nelle Telecomunicazioni

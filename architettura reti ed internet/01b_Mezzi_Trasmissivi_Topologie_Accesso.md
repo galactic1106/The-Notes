@@ -23,12 +23,12 @@ tags:
 ## 2. Mezzi Trasmissivi
 Il canale fisico su cui viaggiano i segnali si divide in mezzi guidati (cablati) e non guidati (wireless):
 
-| Mezzo Trasmissivo | Caratteristiche Principali |
-| :--- | :--- |
-| **Doppino intrecciato (*Twisted Pair*)** | Coppie di fili di rame intrecciati per ridurre le interferenze elettromagnetiche (es. cavi UTP/STP per reti Ethernet LAN). |
-| **Cavo coassiale** | Conduttore centrale in rame schermato da una calza metallica; usato nelle prime reti Ethernet (10Base5/10Base2) e nelle reti TV via cavo. |
-| **[[Fibra Ottica]]** | Trasmissione tramite impulsi luminosi (LED o laser) in un nucleo di vetro/silice; altissima larghezza di banda, bassissima attenuazione e totale immunità alle interferenze elettromagnetiche. |
-| **Etere (Wireless / Onde radio)** | Propagazione elettromagnetica nello spazio libero (onde radio, microonde, satelliti, infrarossi); soggetta a interferenze e attenuazione. |
+| Mezzo Trasmissivo                        | Caratteristiche Principali                                                                                                                                                                     |
+| :--------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Doppino intrecciato (*Twisted Pair*)** | Coppie di fili di rame intrecciati per ridurre le interferenze elettromagnetiche (es. cavi UTP/STP per reti Ethernet LAN).                                                                     |
+| **Cavo coassiale**                       | Conduttore centrale in rame schermato da una calza metallica; usato nelle prime reti Ethernet (10Base5/10Base2) e nelle reti TV via cavo.                                                      |
+| **[[Fibra Ottica]]**                     | Trasmissione tramite impulsi luminosi (LED o laser) in un nucleo di vetro/silice; altissima larghezza di banda, bassissima attenuazione e totale immunità alle interferenze elettromagnetiche. |
+| **Etere (Wireless / Onde radio)**        | Propagazione elettromagnetica nello spazio libero (onde radio, microonde, satelliti, infrarossi); soggetta a interferenze e attenuazione.                                                      |
 
 ---
 
@@ -40,6 +40,8 @@ La topologia definisce la disposizione fisica o logica dei nodi e dei collegamen
 * **Anello (*Ring*):** ogni nodo è collegato al successivo formando un circuito chiuso unidirezionale; i dati transitano di stazione in stazione (spesso tramite concentratori **MAU**).
 * **Albero (*Tree*):** struttura gerarchica multilivello con un nodo radice; facilmente espandibile, ma vulnerabile ai guasti nei nodi di livello superiore.
 * **Maglia (*Mesh*):** i nodi sono interconnessi da percorsi multipli (maglia completa o parziale); garantisce elevata tolleranza ai guasti e ridondanza (tipica delle dorsali geografiche e delle reti wireless mesh).
+
+![[architettura reti ed internet/Excalidraw/Topologie_di_Rete|1000]]
 
 ---
 
@@ -58,3 +60,6 @@ Utilizzato nelle reti ad anello (standard **IEEE 802.5**, sviluppato da IBM):
 * **Flusso della trasmissione:** la stazione mittente trattiene il token, immette il frame dati sull'anello; ogni stazione intermedia lo rigenera, il destinatario lo copia e imposta i bit di conferma, e quando il frame torna al mittente questi lo rimuove e rilascia un nuovo token libero.
 * **Hardware tipico:** concentratori **MAU** (*Multi-Station Access Unit*, che realizzano un anello logico su cablaggio fisico a stella) e connettori **IBM Type 1** o **RJ-45**.
 * **Caratteristica:** metodo **deterministico** (garantisce un tempo massimo di attesa noto anche ad alto carico, ma richiede gestione per perdita o duplicazione del token).
+
+![[Token_Ring_802_5|1000]]
+
