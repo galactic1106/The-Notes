@@ -11,10 +11,10 @@
             "id": "91ba1c46a14f952e",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -76,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.08073043823242
+    "width": 372.4960746765137
   },
   "right": {
     "id": "f589d59a27d7db80",
@@ -194,16 +194,26 @@
   },
   "active": "91ba1c46a14f952e",
   "lastOpenFiles": [
+    "architettura reti ed internet/05c_Bridge_Switch_STP_e_VLAN.md",
+    "architettura reti ed internet/07c_ARP_ICMP_e_Protocollo_IPv6.md",
+    "architettura reti ed internet/07b_Indirizzamento_IPv4_Subnetting_CIDR_e_NAT.md",
+    "architettura reti ed internet/07a_Livello_Network_e_Protocollo_IPv4.md",
+    "architettura reti ed internet/05b_Token_Bus_802_4_e_Token_Ring_802_5.md",
+    "architettura reti ed internet/05a_Ethernet_IEEE_802_3_e_CSMA_CD.md",
+    "architettura reti ed internet/06b_Evoluzione_WiFi_Sicurezza_e_Bluetooth_802_15.md",
+    "Untitled.canvas",
+    "architettura reti ed internet/06a_Wireless_LAN_IEEE_802_11_e_CSMA_CA.md",
+    "ISO-OSI.md",
+    "architettura reti ed internet/02b_Modello_ISO_OSI_e_Standardizzazione.md",
+    "architettura reti ed internet/03a_Livello_Fisico_e_Mezzi_Trasmissivi.md",
+    "architettura reti ed internet/02c_Teoria_Informazione_Misura_e_Protocolli.md",
+    "architettura reti ed internet/02a_Storia_di_Internet_1989_Oggi.md",
     "architettura reti ed internet/test/04c_Accesso_Multiplo_Protocolli_DL.md",
     "architettura reti ed internet/04c_Accesso_Multiplo_Protocolli_DL.md",
     "architettura reti ed internet/04b_Controllo_Flusso_ARQ.md",
     "architettura reti ed internet/04a_DataLink_Framing_Errori.md",
     "architettura reti ed internet/03c_Teoremi_di_Nyquist_e_Shannon.md",
     "architettura reti ed internet/03b_Connessioni_Wireless_e_Reti_Mobili.md",
-    "architettura reti ed internet/03a_Livello_Fisico_e_Mezzi_Trasmissivi.md",
-    "architettura reti ed internet/02c_Teoria_Informazione_Misura_e_Protocolli.md",
-    "architettura reti ed internet/02b_Modello_ISO_OSI_e_Standardizzazione.md",
-    "architettura reti ed internet/02a_Storia_di_Internet_1989_Oggi.md",
     "architettura reti ed internet/01c_Elementi_Infrastruttura_e_Reti_Aziendali.md",
     "architettura reti ed internet/01b_Mezzi_Trasmissivi_Topologie_Accesso.md",
     "architettura reti ed internet/01a_Storia_di_Internet_1961_1988.md",
@@ -211,17 +221,7 @@
     "architettura reti ed internet/test/04a_DataLink_Framing_Errori.md",
     "architettura reti ed internet/test/03c_Teoremi_di_Nyquist_e_Shannon.md",
     "architettura reti ed internet/test/03b_Connessioni_Wireless_e_Reti_Mobili.md",
-    "architettura reti ed internet/test/03a_Livello_Fisico_e_Mezzi_Trasmissivi.md",
-    "architettura reti ed internet/test/02c_Teoria_Informazione_Misura_e_Protocolli.md",
-    "architettura reti ed internet/test/02b_Modello_ISO_OSI_e_Standardizzazione.md",
-    "architettura reti ed internet/test/02a_Storia_di_Internet_1989_Oggi.md",
-    "architettura reti ed internet/test/01c_Elementi_Infrastruttura_e_Reti_Aziendali.md",
-    "architettura reti ed internet/test/01b_Mezzi_Trasmissivi_Topologie_Accesso.md",
-    "architettura reti ed internet/test/01a_Storia_di_Internet_1961_1988.md",
-    "architettura reti ed internet/ARP e RARP.md",
-    "architettura reti ed internet/Elementi Infrastruttura Internet.md",
     "architettura reti ed internet/test",
-    "Untitled.canvas",
     "architettura reti ed internet",
     "Excalidraw/Untitled.canvas",
     "Excalidraw",
