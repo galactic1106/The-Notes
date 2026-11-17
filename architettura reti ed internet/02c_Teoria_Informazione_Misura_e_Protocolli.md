@@ -31,12 +31,15 @@ Per **comunicazione dati** si intende lo scambio di informazione tra due o più 
 2. Il segnale attraversa il **canale trasmissivo**, dove può subire alterazioni dovute al **rumore** (*noise*).
 3. Il **Destinatario** applica la **decodifica** per ricostruire il messaggio originale (con eventuale canale di feedback/ritorno).
 
+![[Schema_Processo_Comunicativo|1000]]
 ### La Piramide [[DIKW]] (*Data, Information, Knowledge, Wisdom*)
 Rappresenta la gerarchia del valore informativo dal basso verso l'alto:
 1. **Dati (*Data*):** simboli o valori grezzi, oggettivi e privi di contesto (volume massimo).
 2. **Informazione (*Information*):** dati organizzati, strutturati e contestualizzati.
 3. **Conoscenza (*Knowledge*):** rielaborazione soggettiva dell'informazione tramite esperienza e regole.
 4. **Saggezza (*Wisdom*):** capacità decisionale e applicativa al vertice della piramide.
+
+![[Piramide_DIKW|1000]]
 
 ---
 
@@ -51,7 +54,7 @@ $$Q = \log_2(M)$$
 ---
 
 ## 4. Il Protocollo di Comunicazione
-Un **protocollo** è l'insieme di regole formali che disciplinano la comunicazione tra due o più entità:
+Un **protocollo di comunicazione** è l'insieme di regole formali che disciplinano la comunicazione tra due o più entità:
 * **Sintassi:** struttura e formato dei dati (ordine dei bit/byte nei campi del messaggio).
 * **Semantica:** significato di ciascuna sezione di bit e azioni da intraprendere di conseguenza.
 * **Temporizzazione (*Timing*):** quando i dati devono essere inviati e a quale velocità.

@@ -1,3 +1,30 @@
-/.trash
-/.obsidian/plugins/obsidian-completr/scanned_words.txt
-/.obsidian/workspace.json
+# Obsidian Workspace & Cache (Recommended)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian Trash
+.trash/
+
+# Optional: Plugins, Themes & Settings (Uncomment to ignore)
+.obsidian/plugins/
+.obsidian/themes/
+# .obsidian/snippets/
+.obsidian/appearance.json
+# .obsidian/community-plugins.json
+# .obsidian/core-plugins.json
+# .obsidian/hotkeys.json
+
+# Optional: Frequent Plugin Caches
+.obsidian/plugins/obsidian-git/data.json
+.obsidian/plugins/recent-files-obsidian/data.json
+
+# Operating System Junk
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+/.obsidian/plugins
