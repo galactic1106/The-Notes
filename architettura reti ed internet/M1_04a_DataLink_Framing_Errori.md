@@ -34,11 +34,11 @@ Gli errori possono essere **isolati** (singolo bit invertito) o **a raffica (bur
 ### Codici a Rilevamento d'Errore (Error Detection)
 * **Bit di parità:** aggiunge 1 bit per rendere pari (o dispari) il numero totale di `1`. Rileva tutti gli errori su un numero dispari di bit, ma fallisce su errori pari.
 * **Parità bidimensionale (LRC/VRC):** organizza i dati in matrice con parità per riga e per colonna; rileva errori multipli e corregge singoli errori.
-* **Checksum (Somma di controllo):** suddivide i dati in parole da $k$ bit (es. 16 bit), le somma in complemento a 1 e trasmette il complemento del risultato. Leggero da calcolare via software, ma meno robusto del CRC.
+* **Checksum (Somma di controllo):** suddivide i dati in parole da $k$ bit (es. 16 bit), le somma in complemento a 1 e trasmette il complemento del risultato insieme all messaggio. Leggero da calcolare via software, ma meno robusto del CRC.
 * **CRC (Cyclic Redundancy Check):** tratta i bit come coefficienti di un polinomio $M(x)$ su $GF(2)$.
   1. Si sceglie un polinomio generatore $G(x)$ di grado $r$ noto a mittente e ricevitore.
-  2. Si appendono $r$ zeri al messaggio ($x^r M(x)$) e si calcola il resto $R(x)$ della divisione modulo 2 per $G(x)$.
-  3. Si trasmette $T(x) = x^r M(x) + R(x)$, che è divisibile esattamente per $G(x)$.
+  2. Si appendono $r$ zeri al messaggio ($x^r M(x)$) e si calcola il resto $R(x)$ della divisione modulo 2 per $G(x)$. 
+  3. Si trasmette $T(x) = x^r M(x) + R(x)$, che è divisibile esattamente per $G(x)$. <small>*Il messaggio trasmesso ha questa forma [ Messaggio originale M (n bit) | Resto CRC R (r bit) ]*</small>
   4. Il ricevitore divide il frame ricevuto per $G(x)$: se il resto è $\neq 0$, si è verificato un errore.
 
 ### Codici a Correzione d'Errore (FEC — Forward Error Correction)
