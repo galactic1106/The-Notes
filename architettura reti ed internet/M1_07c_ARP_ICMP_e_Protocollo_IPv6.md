@@ -43,7 +43,7 @@ Progettato dall'IETF (RFC 2460 / RFC 8200) per risolvere definitivamente l'esaur
 ### Caratteristiche Principali e Vantaggi rispetto a IPv4
 * **Spazio di indirizzamento a $128\text{ bit}$:** offre $2^{128} \approx 3.4 \times 10^{38}$ indirizzi univoci. Scritto in **notazione esadecimale** suddivisa in $8$ gruppi da $16\text{ bit}$ separati da due punti (es. `2001:0db8:85a3:0000:0000:8a2e:0370:7334`, comprimibile omettendo gli zeri iniziali e sostituendo una sequenza contigua di gruppi nulli con `::`).
 * **Header fisso e semplificato ($40\text{ byte}$):**
-  * Eliminati i campi *IHL*, *Identification*, *Flags*, *Fragment Offset* e *Header Checksum* (il controllo errori è già garantito dai livelli L2 e L4, velocizzando l'inoltro nei router).
+  * Eliminati i campi *IHL*, *Identification*, *Flags*, *Fragment Offset* e *Header Checksum* (il controllo errori è già garantito dai livelli L2 (Datalink) e L4 (Transport), velocizzando l'inoltro nei router).
   * Le opzioni vengono gestite tramite **Extension Headers** concatenati (*Next Header*) elaborati solo quando necessario.
 * **Nessuna frammentazione nei router:** in IPv6 i router intermedi **non frammentano mai** i pacchetti; solo la sorgente può frammentare utilizzando la **Path MTU Discovery** (dimensione minima MTU garantita su ogni collegamento IPv6: $1280\text{ byte}$).
 * **Autoconfigurazione e sicurezza:** supporto nativo a **SLAAC** (*Stateless Address Autoconfiguration*), sostituzione di ARP con **NDP** (*Neighbor Discovery Protocol* basato su ICMPv6) e supporto nativo a **[[IPsec]]**.

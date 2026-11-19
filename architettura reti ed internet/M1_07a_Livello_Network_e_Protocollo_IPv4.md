@@ -44,6 +44,8 @@ L'intestazione di un pacchetto IPv4 ha una dimensione minima di **$20\text{ byte
 | **Destination IP Address** | $32$ | Indirizzo IPv4 dell'host destinatario. |
 | **Options + Padding** | $0 - 320$ | Campi opzionali (es. *Record Route*, *Timestamp*) allineati a multipli di $32\text{ bit}$. |
 
+![[header_ipv4.svg|700]]
+
 ---
 
 ## 3. Frammentazione e Riassemblaggio IPv4

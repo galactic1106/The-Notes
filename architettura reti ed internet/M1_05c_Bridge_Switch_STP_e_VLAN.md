@@ -23,6 +23,8 @@ tags:
   * Switch e bridge **inoltrano il traffico broadcast su tutte le porte** (tranne quella di ingresso): mantengono quindi un **unico dominio di broadcast** (a meno di non configurare delle **VLAN**).
   * Solo i **[[Router]] (Livello 3)** separano sia i domini di collisione sia i domini di broadcast.
 
+![[domini_di_collisione_e_broadcast.svg]]
+
 ---
 
 ## 2. Funzionamento di [[Bridge]] e [[Switch]] (*Transparent Bridging*)

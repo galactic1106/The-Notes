@@ -21,7 +21,7 @@ Una formula classica è $P : A \leftarrow B$ che copia il valore del registro $B
 | \<virgola\>                                                      | separazione tra 2 micro funzioni di controllo         |                  |
 
 
-![[MOV operation PDP *]]
+![[MOV operation PDP]]
 ![[Shift Operation PDP8]]
 ![[Transfer Parallelo]]
 

@@ -61,14 +61,16 @@ Per risolvere il problema del terminale nascosto sui frame lunghi:
 ## 4. Formato della Trama IEEE 802.11
 A differenza di Ethernet (che usa solo 2 indirizzi MAC), la trama 802.11 può contenere fino a **4 indirizzi MAC** per gestire l'instradamento attraverso gli Access Point e il Distribution System:
 
-| Campo | Dimensione | Descrizione |
-| :--- | :---: | :--- |
-| **Frame Control** | $2\text{ byte}$ | Versione protocollo, Tipo (Management, Control, Data), Sottotipo, bit **To DS** e **From DS**, flag frammentazione/crittografia. |
-| **Duration / ID** | $2\text{ byte}$ | Tempo in microsecondi per cui il canale resta occupato (aggiorna il **NAV** delle altre stazioni). |
-| **Address 1 (RA)** | $6\text{ byte}$ | *Receiver Address*: indirizzo MAC del dispositivo radio che riceve immediatamente il frame (es. AP). |
-| **Address 2 (TA)** | $6\text{ byte}$ | *Transmitter Address*: indirizzo MAC del dispositivo radio che ha trasmesso il frame sul canale. |
-| **Address 3** | $6\text{ byte}$ | Indirizzo MAC dell'host finale (destinazione o sorgente) collegato alla rete cablata oltre l'AP. |
-| **Sequence Control** | $2\text{ byte}$ | Numero di sequenza ($12\text{ bit}$) per rilevare duplicati e numero di frammento ($4\text{ bit}$). |
-| **Address 4** | $6\text{ byte}$ | Presente **solo** nei ponti wireless AP-to-AP ($\text{To DS} = 1$ e $\text{From DS} = 1$, modalità WDS). |
-| **Frame Body (Payload)** | $0 - 2312\text{ byte}$ | Dati incapsulati dal livello superiore (LLC/IP). |
-| **FCS** | $4\text{ byte}$ | Codice **CRC-32** per la verifica dell'integrità della trama. |
+| Campo                    |       Dimensione       | Descrizione                                                                                                                      |
+| :----------------------- | :--------------------: | :------------------------------------------------------------------------------------------------------------------------------- |
+| **Frame Control**        |    $2\text{ byte}$     | Versione protocollo, Tipo (Management, Control, Data), Sottotipo, bit **To DS** e **From DS**, flag frammentazione/crittografia. |
+| **Duration / ID**        |    $2\text{ byte}$     | Tempo in microsecondi per cui il canale resta occupato (aggiorna il **NAV** delle altre stazioni).                               |
+| **Address 1 (RA)**       |    $6\text{ byte}$     | *Receiver Address*: indirizzo MAC del dispositivo radio che riceve immediatamente il frame (es. AP).                             |
+| **Address 2 (TA)**       |    $6\text{ byte}$     | *Transmitter Address*: indirizzo MAC del dispositivo radio che ha trasmesso il frame sul canale.                                 |
+| **Address 3**            |    $6\text{ byte}$     | Indirizzo MAC dell'host finale (destinazione o sorgente) collegato alla rete cablata oltre l'AP.                                 |
+| **Sequence Control**     |    $2\text{ byte}$     | Numero di sequenza ($12\text{ bit}$) per rilevare duplicati e numero di frammento ($4\text{ bit}$).                              |
+| **Address 4**            |    $6\text{ byte}$     | Presente **solo** nei ponti wireless AP-to-AP ($\text{To DS} = 1$ e $\text{From DS} = 1$, modalità WDS).                         |
+| **Frame Body (Payload)** | $0 - 2312\text{ byte}$ | Dati incapsulati dal livello superiore (LLC/IP).                                                                                 |
+| **FCS**                  |    $4\text{ byte}$     | Codice **CRC-32** per la verifica dell'integrità della trama.                                                                    |
+
+![[trama_IEEE_802_11.svg]]

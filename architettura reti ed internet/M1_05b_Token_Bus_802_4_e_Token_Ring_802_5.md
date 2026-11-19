@@ -32,6 +32,8 @@ Combina la topologia **fisica a bus** (tipicamente su cavo coassiale a banda lar
 * **Manutenzione dell'anello:** esistono procedure specifiche per l'aggiunta di nuove stazioni (*Solicit Successor*), l'uscita ordinata di un nodo (*Set Successor*) e la rigenerazione del token in caso di guasto.
 * **Ambito applicativo:** automazione industriale (standard **MAP**, *Manufacturing Automation Protocol*).
 
+![[Token_Bus_IEEE_802_4.svg]]
+
 ---
 
 ## 3. [[Token Ring]] (Standard IEEE 802.5)
@@ -47,6 +49,8 @@ Sviluppato originariamente da IBM (e standardizzato come **IEEE 802.5**), utiliz
    * La trama torna al **mittente**, che verifica i bit `A` e `C` come conferma di ricezione, rimuove la trama dall'anello (*stripping*) e rilascia un nuovo token libero.
 3. **Early Token Release:** nelle versioni a $16\text{ Mbps}$, il mittente può rilasciare il token subito dopo aver trasmesso l'ultimo bit della trama senza attendere il giro completo sull'anello, migliorando l'efficienza.
 4. **Active Monitor:** una stazione designata sull'anello vigila sul corretto funzionamento, rimuove trame orfane che circolano all'infinito e rigenera il token in caso di smarrimento.
+
+![[token_ring_ieee_802_5_funzionamento_e_trama.svg]]
 
 ### Confronto Sintetico: Ethernet (802.3) vs Token Ring (802.5)
 

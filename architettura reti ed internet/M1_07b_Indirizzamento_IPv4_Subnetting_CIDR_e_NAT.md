@@ -24,6 +24,7 @@ Un indirizzo IPv4 è un numero binario a **$32\text{ bit}$** ($4\text{ byte}$), 
 * **Indirizzo di Broadcast Diretto:** tutti i bit dell'*Host ID* posti a `1` (invia pacchetti a tutti gli host della sottorete).
 * **Limited Broadcast (`255.255.255.255`):** broadcast limitato alla rete locale corrente (non inoltrato dai router).
 * **Loopback (`127.0.0.0/8`, tipicamente `127.0.0.1`):** usato per comunicazioni interne sullo stesso host (*localhost*).
+* **Default Route (`0.0.0.0`):** identifica la rotta predefinita nelle tabelle di routing oppure un host non ancora configurato (es. richieste DHCP).
 
 ---
 
