@@ -38,11 +38,12 @@ Protocollo di trasporto minimale, **connectionless** (senza connessione) e **non
   4. *Checksum* ($16\text{ bit}$): rilevamento errori (calcolato su pseudo-header IP + header UDP + dati).
 * **Ambiti d'uso:** applicazioni sensibili al ritardo (*real-time*) che tollerano piccole perdite (streaming audio/video, VoIP, gaming online) oppure protocolli transazionali rapidi (*query/response*) come **[[DNS]]**, **[[DHCP]]** e **SNMP**.
 
+![[header_udp.svg]]
+
 ---
 
 ## 3. [[TCP]] (*Transmission Control Protocol* – RFC 793)
 Protocollo di trasporto **connection-oriented** (orientato alla connessione), **affidabile**, **full-duplex** e orientato al **flusso di byte (*byte-stream*)**:
-
 ### Struttura dell'Header TCP ($20\text{ byte}$ minimi, fino a $60\text{ byte}$)
 * **Source Port ($16\text{ bit}$) e Destination Port ($16\text{ bit}$):** identificano le applicazioni mittente e destinataria.
 * **Sequence Number ($32\text{ bit}$):** numero d'ordine del primo byte di dati trasportato nel segmento corrente all'interno del flusso.
@@ -59,6 +60,8 @@ Protocollo di trasporto **connection-oriented** (orientato alla connessione), **
 * **Checksum ($16\text{ bit}$):** controllo integrità obbligatorio.
 * **Options ($0 - 40\text{ byte}$):** es. **MSS** (*Maximum Segment Size*), *Window Scaling*, *SACK* (*Selective ACK*).
 
+![[header_tcp.svg]]
+
 ---
 
 ## 4. Gestione della Connessione TCP: *Three-Way Handshake*
@@ -68,9 +71,13 @@ Protocollo di trasporto **connection-oriented** (orientato alla connessione), **
 2. **Passo 2 (`SYN-ACK`):** il server alloca i buffer e risponde con flag `SYN = 1`, `ACK = 1`, il proprio numero di sequenza iniziale $\text{Seq} = y$ e $\text{Ack} = x + 1$.
 3. **Passo 3 (`ACK`):** il client conferma ricevendo i parametri del server con flag `ACK = 1`, $\text{Seq} = x + 1$ e $\text{Ack} = y + 1$ (può già trasportare payload applicativo).
 
+![[TCP_Three_Way_Handshake.svg]]
+
 ### Chiusura della Connessione (*4-Way Handshake*)
 Poiché TCP è full-duplex, ciascuna direzione va chiusa indipendentemente:
 1. Il lato $A$ invia un segmento con `FIN = 1`.
 2. Il lato $B$ risponde con `ACK = 1` (la direzione $A \rightarrow B$ è chiusa; $B$ può ancora inviare dati).
 3. Quando anche $B$ ha finito, invia un segmento con `FIN = 1`.
 4. $A$ risponde con `ACK = 1` ed entra nello stato temporaneo **`TIME_WAIT`** (pari a $2 \times \text{MSL}$, *Maximum Segment Lifetime*) per assicurarsi che l'ultimo ACK sia giunto a destinazione ed evitare che pacchetti ritardati interferiscano con nuove connessioni.
+
+![[TCP_Four_Way_Handshake_Graceful_Close.svg]]

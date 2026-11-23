@@ -41,6 +41,10 @@ A differenza del controllo di flusso (che tutela il singolo ricevente), il contr
   $$\text{Finestra Effettiva} = \min(\text{cwnd}, \text{rwnd})$$
 
 ### Fasi dell'Algoritmo di Controllo di Congestione TCP (AIMD)
+
+>[!todo]
+> la spiegazione è da riscrivere questa è incomprensibile
+
 TCP sonda la capacità disponibile della rete tramite l'approccio **AIMD** (*Additive Increase, Multiplicative Decrease*) articolato in tre stati:
 
 1. **Slow Start (Partenza Lenta):**
@@ -51,3 +55,5 @@ TCP sonda la capacità disponibile della rete tramite l'approccio **AIMD** (*Add
 3. **Reazione agli Eventi di Perdita (Rilevamento della Congestione):**
    * **Perdita grave (scadenza del Timeout RTO):** la rete è fortemente congestionata. TCP imposta $\text{ssthresh} = \frac{\text{cwnd}}{2}$, azzera $\text{cwnd} = 1\text{ MSS}$ e riparte dallo **Slow Start** (TCP Tahoe / Reno).
    * **Perdita lieve (3 ACK Duplicati – *Fast Recovery* in TCP Reno):** alcuni segmenti continuano comunque ad arrivare al destinatario. TCP esegue la *Fast Retransmit*, dimezza la finestra ($\text{ssthresh} = \frac{\text{cwnd}}{2}$, $\text{cwnd} = \text{ssthresh} + 3\text{ MSS}$) e prosegue direttamente in **Congestion Avoidance** senza ricadere nello Slow Start.
+
+![[additive_increase_multiplicative_decrese.svg]]
