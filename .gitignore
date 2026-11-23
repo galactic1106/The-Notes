@@ -6,12 +6,9 @@
 .trash/
 
 # Optional: Plugins, Themes & Settings (Uncomment to ignore)
-# .obsidian/plugins/
 .obsidian/themes/
 # .obsidian/snippets/
 .obsidian/appearance.json
-# .obsidian/community-plugins.json
-# .obsidian/core-plugins.json
 # .obsidian/hotkeys.json
 
 # Optional: Frequent Plugin Caches
@@ -27,6 +24,20 @@
 ehthumbs.db
 Thumbs.db
 desktop.ini
-/.obsidian/plugins
-/.obsidian/plugins
 /architettura reti ed internet/Excalidraw/*.svg
+
+# Ignore all plugin files by default
+.obsidian/plugins/*
+
+# Keep the list of installed/enabled plugins (optional, helpful for syncing)
+!.obsidian/community-plugins.json
+!.obsidian/core-plugins.json
+
+# Re-include each plugin's directory so Git can traverse into it
+!.obsidian/plugins/*/
+
+# Ignore everything inside each plugin folder...
+.obsidian/plugins/*/*
+
+# ...except the plugin's settings file
+!.obsidian/plugins/*/data.json
