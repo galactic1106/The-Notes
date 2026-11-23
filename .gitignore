@@ -6,7 +6,7 @@
 .trash/
 
 # Optional: Plugins, Themes & Settings (Uncomment to ignore)
-.obsidian/plugins/
+# .obsidian/plugins/
 .obsidian/themes/
 # .obsidian/snippets/
 .obsidian/appearance.json
