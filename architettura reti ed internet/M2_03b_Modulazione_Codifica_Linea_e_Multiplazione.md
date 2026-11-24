@@ -45,7 +45,7 @@ $$s(t) = A \sin(2\pi f t + \phi)$$
 * **[[PSK]] (*Phase Shift Keying*):** varia la **fase** $\phi$ della portante (es. BPSK con 2 fasi a $180^\circ$, QPSK con 4 fasi a $90^\circ$ che trasporta 2 bit per simbolo).
 * **[[QAM]] (*Quadrature Amplitude Modulation*):** combina simultaneamente variazioni di **ampiezza e fase** (es. 16-QAM, 64-QAM, 256-QAM), consentendo di trasmettere molti bit per singolo simbolo (*alta efficienza spettrale*) nelle reti Wi-Fi, 4G/5G e xDSL.
 
-![[grafi_modulazioni_digitali_ask_fsk_psk_e_diagramma_a_costellazione_iq.svg]]
+![[grafi_modulazioni_digitali_ask_fsk_psk_e_diagramma_a_costellazione_iq|1000]]
 
 ### Digitalizzazione di Segnali Analogici: [[PCM]] (*Pulse Code Modulation*)
 Utilizzata dai **Codec** per convertire la voce analogica in flussi digitali:

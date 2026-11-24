@@ -626,7 +626,7 @@
   "dynamicStyling": "colorful",
   "embedMarkdownCommentLinks": true,
   "embedPlaceholderImage": true,
-  "embedType": "excalidraw",
+  "embedType": "SVG",
   "embedUseExcalidrawFolder": false,
   "embedWikiLink": true,
   "embeddableMarkdownDefaults": {
